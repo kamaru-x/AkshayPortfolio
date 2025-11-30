@@ -773,23 +773,39 @@
         <!-- minimal style block for keyframes and a small responsive tweak -->
         <style>
             @keyframes marquee-left {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); } /* -50% because content is duplicated */
+                0% { transform: translateX(0); }
+                100% { transform: translateX(-50%); } /* -50% because content is duplicated */
             }
             @keyframes marquee-right {
-            0% { transform: translateX(-50%); }
-            100% { transform: translateX(0); }
+                0% { transform: translateX(-50%); }
+                100% { transform: translateX(0); }
             }
 
-            /* small responsive tweak: reduce logo height on very small screens */
-            @media (max-width: 600px) {
-            .marquee-track-left img, .marquee-track-right img {
-                height:80px !important;
-                margin: 0 !important;
+            .marquee-track-left img,
+            .marquee-track-right img {
+                height: 140px;
+                width: auto;
+                display: block;
+                object-fit: contain;
+                background: white;
+                padding: 10px; /* spacing inside box */
+                
+                /* New additions */
+                border: 1px solid #ddd;      /* light gray border */
+                border-radius: 12px;         /* rounded corners */
+                box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* soft shadow */
             }
+
+            @media (max-width: 600px) {
+                .marquee-track-left img,
+                .marquee-track-right img {
+                    height: 80px !important;
+                    padding: 8px;
+                    border-radius: 10px;
+                }
             }
         </style>
-        </section>
+    </section>
     <!-- END SECTION BLOG -->
 
     <!-- START SECTION CONTACT -->
