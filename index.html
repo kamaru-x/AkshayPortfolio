@@ -53,6 +53,53 @@
             border: 3px solid;
             border: gray;
         }
+
+        /* Floating Buttons Container */
+        .floating-buttons {
+            position: fixed;
+            bottom: 75px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            z-index: 9999;
+        }
+
+        /* Individual Buttons */
+        .float-btn {
+            width: 40px;
+            height: 40px;
+            background: white;
+            border-radius: 50%;
+            border: 2px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: 0.3s;
+        }
+
+        .float-btn img {
+            width: 32px;
+            height: 32px;
+        }
+
+        /* Button Hover Effect */
+        .float-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+        }
+
+        /* WhatsApp Button Accent */
+        .whatsapp-btn {
+            border-color: #25D366;
+        }
+
+        /* Call Button Accent */
+        .call-btn {
+            border-color: #007bff;
+        }
+
     </style>
 
 </head>
@@ -70,6 +117,16 @@
         </div>
     </div>
     <!-- END LOADER -->
+
+    <div class="floating-buttons">
+        <a href="https://wa.me/+919747859872" target="_blank" class="float-btn whatsapp-btn">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+        </a>
+
+        <a href="tel:+919747859872" class="float-btn call-btn">
+            <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Call">
+        </a>
+    </div>
 
     <!-- START HEADER -->
     <header class="header_wrap fixed-top light_skin hover_menu_style3 transparent-header">
@@ -144,7 +201,7 @@
                     </div>
                     <div class="col-xl-5 col-md-5">
                         <div class="banner_img animation" data-animation="fadeInUp" data-animation-delay="0.02s">
-                            <img src="assets/images/image.png" width="100%" alt="my_image" />
+                            <img src="assets/images/akshay.png" width="100%" alt="my_image" />
                         </div>
                     </div>
                 </div>
@@ -598,8 +655,104 @@
     </section>
     <!-- END SECTION SERVICES -->
 
+    <!-- START SECTION BLOG -->
+    <section id="blog" class="pb_70 bg_black4" style="padding-bottom:70px;">
+        <div class="container">
+            <div class="row justify-content-center">
+            <div class="col-xl-6 col-lg-7 col-md-9 text-center">
+                <div class="heading_s1 heading_light animation" data-animation="fadeInUp" data-animation-delay="0.02s">
+                <h2 style="margin:0;" class="text-white">Clients</h2>
+                </div>
+                <p style="margin-top:12px;" class="animation text-white" data-animation="fadeInUp" data-animation-delay="0.03s">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.
+                </p>
+            </div>
+            </div>
+
+            <!-- Row 1: scroll left -->
+            <div class="row justify-content-center" style="margin-top:30px;">
+            <div class="col-md-12 animation" data-animation="fadeInUp" data-animation-delay="0.04s">
+                <div style="overflow:hidden; width:100%; box-sizing:border-box; padding:12px 0;">
+                <!-- track wrapper -->
+                <div style="display:block; width:100%; overflow:hidden;">
+                    <div class="marquee-track-left" style="display:flex; align-items:center; gap:30px; white-space:nowrap; will-change:transform; animation: marquee-left 10s linear infinite;">
+                    <!-- original sequence (one set) -->
+                        <img style="height:140px; display:block;" src="assets/images/clients/1.png" alt="client">
+                        <img style="height:140px; display:block;" src="assets/images/clients/2.png" alt="client">
+                        <img style="height:140px; display:block;" src="assets/images/clients/3.png" alt="client">
+                        <img style="height:140px; display:block;" src="assets/images/clients/4.png" alt="client">
+                        <img style="height:140px; display:block;" src="assets/images/clients/5.png" alt="client">
+                        <img style="height:140px; display:block;" src="assets/images/clients/6.png" alt="client">
+                        <img style="height:140px; display:block;" src="assets/images/clients/7.png" alt="client">
+                        <img style="height:140px; display:block;" src="assets/images/clients/8.png" alt="client">
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <!-- Row 2: scroll right -->
+            <div class="row justify-content-center" style="margin-top:30px;">
+            <div class="col-md-12 animation" data-animation="fadeInUp" data-animation-delay="0.04s">
+                <div style="overflow:hidden; width:100%; box-sizing:border-box; padding:12px 0;">
+                <div style="display:block; width:100%; overflow:hidden;">
+                    <div class="marquee-track-right" style="display:flex; align-items:center; gap:30px; white-space:nowrap; will-change:transform; animation: marquee-right 10s linear infinite;">
+                        <!-- original sequence -->
+                        <img style="height:140px; display:block;" src="assets/images/clients/9.png" alt="client">
+                        <img style="height:140px; display:block;" src="assets/images/clients/10.png" alt="client">
+                        <img style="height:140px; display:block;" src="assets/images/clients/11.png" alt="client">
+                        <img style="height:140px; display:block;" src="assets/images/clients/12.png" alt="client">
+                        <img style="height:140px; display:block;" src="assets/images/clients/13.png" alt="client">
+                        <img style="height:140px; display:block;" src="assets/images/clients/14.png" alt="client">
+                        <img style="height:140px; display:block;" src="assets/images/clients/15.png" alt="client">
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+
+        </div>
+
+        <!-- minimal style block for keyframes and a small responsive tweak -->
+        <style>
+            @keyframes marquee-left {
+                0% { transform: translateX(0); }
+                100% { transform: translateX(-50%); } /* -50% because content is duplicated */
+            }
+            @keyframes marquee-right {
+                0% { transform: translateX(-50%); }
+                100% { transform: translateX(0); }
+            }
+
+            .marquee-track-left img,
+            .marquee-track-right img {
+                height: 140px;
+                width: auto;
+                display: block;
+                object-fit: contain;
+                background: white;
+                /* padding: 10px; */
+                
+                /* New additions */
+                border: 1px solid #ddd;      /* light gray border */
+                border-radius: 12px;         /* rounded corners */
+                box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* soft shadow */
+            }
+
+            @media (max-width: 600px) {
+                .marquee-track-left img,
+                .marquee-track-right img {
+                    height: 80px !important;
+                    /* padding: 8px; */
+                    border-radius: 10px;
+                }
+            }
+        </style>
+    </section>
+    <!-- END SECTION BLOG -->
+
     <!-- START SECTION TESTIMONIAL -->
-    <section class="bg_black4">
+    <section class="bg_black2">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-6 col-lg-7 col-md-9 text-center">
@@ -696,102 +849,6 @@
         </div>
     </section>
     <!-- END SECTION TESTIMONIAL -->
-
-    <!-- START SECTION BLOG -->
-    <section id="blog" class="pb_70 bg_black2" style="padding-bottom:70px;">
-        <div class="container">
-            <div class="row justify-content-center">
-            <div class="col-xl-6 col-lg-7 col-md-9 text-center">
-                <div class="heading_s1 heading_light animation" data-animation="fadeInUp" data-animation-delay="0.02s">
-                <h2 style="margin:0;" class="text-white">Clients</h2>
-                </div>
-                <p style="margin-top:12px;" class="animation text-white" data-animation="fadeInUp" data-animation-delay="0.03s">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.
-                </p>
-            </div>
-            </div>
-
-            <!-- Row 1: scroll left -->
-            <div class="row justify-content-center" style="margin-top:30px;">
-            <div class="col-md-12 animation" data-animation="fadeInUp" data-animation-delay="0.04s">
-                <div style="overflow:hidden; width:100%; box-sizing:border-box; padding:12px 0;">
-                <!-- track wrapper -->
-                <div style="display:block; width:100%; overflow:hidden;">
-                    <div class="marquee-track-left" style="display:flex; align-items:center; gap:30px; white-space:nowrap; will-change:transform; animation: marquee-left 10s linear infinite;">
-                    <!-- original sequence (one set) -->
-                        <img style="height:140px; display:block;" src="assets/images/clients/8.png" alt="client">
-                        <img style="height:140px; display:block;" src="assets/images/clients/9.png" alt="client">
-                        <img style="height:140px; display:block;" src="assets/images/clients/10.png" alt="client">
-                        <img style="height:140px; display:block;" src="assets/images/clients/11.png" alt="client">
-                        <img style="height:140px; display:block;" src="assets/images/clients/12.png" alt="client">
-                        <img style="height:140px; display:block;" src="assets/images/clients/13.png" alt="client">
-                        <img style="height:140px; display:block;" src="assets/images/clients/14.png" alt="client">
-                        <img style="height:140px; display:block;" src="assets/images/clients/15.png" alt="client">
-                    </div>
-                </div>
-                </div>
-            </div>
-            </div>
-
-            <!-- Row 2: scroll right -->
-            <div class="row justify-content-center" style="margin-top:30px;">
-            <div class="col-md-12 animation" data-animation="fadeInUp" data-animation-delay="0.04s">
-                <div style="overflow:hidden; width:100%; box-sizing:border-box; padding:12px 0;">
-                <div style="display:block; width:100%; overflow:hidden;">
-                    <div class="marquee-track-right" style="display:flex; align-items:center; gap:30px; white-space:nowrap; will-change:transform; animation: marquee-right 10s linear infinite;">
-                        <!-- original sequence -->
-                        <img style="height:140px; display:block;" src="assets/images/clients/1.png" alt="client">
-                        <img style="height:140px; display:block;" src="assets/images/clients/2.png" alt="client">
-                        <img style="height:140px; display:block;" src="assets/images/clients/3.png" alt="client">
-                        <img style="height:140px; display:block;" src="assets/images/clients/4.png" alt="client">
-                        <img style="height:140px; display:block;" src="assets/images/clients/5.png" alt="client">
-                        <img style="height:140px; display:block;" src="assets/images/clients/6.png" alt="client">
-                        <img style="height:140px; display:block;" src="assets/images/clients/7.png" alt="client">
-                    </div>
-                </div>
-                </div>
-            </div>
-            </div>
-
-        </div>
-
-        <!-- minimal style block for keyframes and a small responsive tweak -->
-        <style>
-            @keyframes marquee-left {
-                0% { transform: translateX(0); }
-                100% { transform: translateX(-50%); } /* -50% because content is duplicated */
-            }
-            @keyframes marquee-right {
-                0% { transform: translateX(-50%); }
-                100% { transform: translateX(0); }
-            }
-
-            .marquee-track-left img,
-            .marquee-track-right img {
-                height: 140px;
-                width: auto;
-                display: block;
-                object-fit: contain;
-                background: white;
-                /* padding: 10px; */
-                
-                /* New additions */
-                border: 1px solid #ddd;      /* light gray border */
-                border-radius: 12px;         /* rounded corners */
-                box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* soft shadow */
-            }
-
-            @media (max-width: 600px) {
-                .marquee-track-left img,
-                .marquee-track-right img {
-                    height: 80px !important;
-                    /* padding: 8px; */
-                    border-radius: 10px;
-                }
-            }
-        </style>
-    </section>
-    <!-- END SECTION BLOG -->
 
     <!-- START SECTION CONTACT -->
     <section id="contact" class="bg_black4">
