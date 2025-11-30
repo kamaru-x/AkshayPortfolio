@@ -57,7 +57,7 @@
         /* Floating Buttons Container */
         .floating-buttons {
             position: fixed;
-            bottom: 75px;
+            bottom: 20px;
             right: 20px;
             display: flex;
             flex-direction: column;
@@ -67,8 +67,8 @@
 
         /* Individual Buttons */
         .float-btn {
-            width: 40px;
-            height: 40px;
+            width: 60px;
+            height: 60px;
             background: white;
             border-radius: 50%;
             border: 2px solid #ddd;
@@ -120,11 +120,11 @@
 
     <div class="floating-buttons">
         <a href="https://wa.me/+919747859872" target="_blank" class="float-btn whatsapp-btn">
-            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+            <img src="/assets/images/whatsapp.png" alt="WhatsApp">
         </a>
 
         <a href="tel:+919747859872" class="float-btn call-btn">
-            <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Call">
+            <img src="/assets/images/telephone.png" alt="Call">
         </a>
     </div>
 
@@ -133,18 +133,18 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg">
                 <a class="navbar-brand page-scroll" href="#home_section">
-                    <img class="logo_light" src="assets/images/logo_white.png" alt="logo" />
+                    <!-- <img class="logo_light" src="assets/images/logo_white.png" alt="logo" />
                     <img class="logo_dark" src="assets/images/logo_dark.png" alt="logo" />
-                    <img class="logo_default" src="assets/images/logo_dark.png" alt="logo" />
+                    <img class="logo_default" src="assets/images/logo_dark.png" alt="logo" /> -->
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation"> <span class="ion-android-menu"></span> </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <a class="navbar-brand page-scroll" href="#home_section">
-                        <img class="logo_light" src="assets/images/logo_white.png" alt="logo" />
+                        <!-- <img class="logo_light" src="assets/images/logo_white.png" alt="logo" />
                         <img class="logo_dark" src="assets/images/logo_dark.png" alt="logo" />
-                        <img class="logo_default" src="assets/images/logo_dark.png" alt="logo" />
+                        <img class="logo_default" src="assets/images/logo_dark.png" alt="logo" /> -->
                     </a>
                     <ul class="navbar-nav">
                         <li>
@@ -204,13 +204,13 @@
         <div class="social_banner social_vertical">
             <ul class="list_none social_icons text-center">
                 <li>
-                    <a href="#" class="sc_instagram">
-                        <i class="ti-instagram"></i>
+                    <a href="#" style="background-color: #25D366;">
+                        <i class="ti-instagram text-white"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="sc_linkedin">
-                        <i class="ti-linkedin"></i>
+                    <a href="#" style="background-color: #25D366;">
+                        <i class="ti-linkedin text-white"></i>
                     </a>
                 </li>
             </ul>
@@ -873,10 +873,6 @@
                                     <input placeholder="Enter Company Name" id="company" class="form-control" name="company"
                                         type="text">
                                 </div>
-                                <div class="form-group col-12">
-                                    <input placeholder="Enter Subject" id="subject" class="form-control" name="subject"
-                                        type="text">
-                                </div>
                                 <div class="form-group col-lg-12">
                                     <textarea required="required" placeholder="Message *" id="description"
                                         class="form-control" name="message" rows="5"></textarea>
@@ -908,7 +904,7 @@
 
     <!-- START FOOTER SECTION -->
     <footer class="footer_dark bg_black2">
-        <div class="top_footer">
+        <!-- <div class="top_footer">
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center">
@@ -926,21 +922,21 @@
                             </form>
                         </div>
                         <ul class="list_none social_icons pt-4">
-                            <li><a href="#" class="sc_facebook"><i class="ion-social-instagram-outline"></i></a></li>
-                            <li><a href="#" class="sc_facebook"><i class="ti-linkedin"></i></a></li>
-                            <li><a href="#" class="sc_facebook"><i class="ion-social-facebook"></i></a></li>
+                            <li><a href="#" style="background-color: #25D366;"><i class="ion-social-instagram-outline text-white"></i></a></li>
+                            <li><a href="#" style="background-color: #25D366;"><i class="ti-linkedin text-white"></i></a></li>
+                            <li><a href="#" style="background-color: #25D366;"><i class="ion-social-facebook text-white"></i></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="bottom_footer border_top_tran">
+                    <div class="bottom_footer">
                         <div class="row">
                             <div class="col-12">
-                                <p class="copyright m-0 text-center">© Developed By <a href="https://kamaru.in/" class="text_default">Kamarudheen</a></p>
+                                <p class="copyright m-0 text-center">© Developed By <a href="https://kamaru.in/" target="_blank" class="text_default">Kamarudheen</a></p>
                             </div>
                         </div>
                     </div>
@@ -950,7 +946,7 @@
     </footer>
     <!-- END FOOTER SECTION -->
 
-    <a href="#" class="scrollup" style="display: none;"><i class="ion-ios-arrow-up"></i></a>
+    <!-- <a href="#" class="scrollup" style="display: none;"><i class="ion-ios-arrow-up"></i></a> -->
 
     <!-- Latest jQuery -->
     <script src="assets/js/jquery-1.12.4.min.js"></script>
